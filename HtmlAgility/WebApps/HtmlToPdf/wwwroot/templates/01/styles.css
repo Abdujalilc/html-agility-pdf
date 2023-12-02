@@ -1,0 +1,108 @@
+﻿* {
+    color: black;
+}
+
+body {
+    font-family: "TT Wellingtons";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.a4-page {
+    width: 210mm; /* A4 width in millimeters */
+    height: 297mm; /* A4 height in millimeters */
+    margin: 0 auto; /* Center the content horizontally */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    padding: 20mm; /* Optional: Add padding for content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+.wu-certificate {
+    position: relative;
+	background-image: url('BackImage.png'); 
+	width: 297mm; 
+	height: 210mm; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+.wu-main-part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.wu-username {
+    font-size: 35px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    font-family: "TT Wellingtons DemiBold";
+}
+
+.wu-cause {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.wu-eventname {
+    font-style: italic;
+}
+
+.wu-signators {
+	height:24%;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 73%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    /*background-color:blueviolet;*/
+}
+
+.wu-signature {
+    text-align: center;
+}
+
+.wu-signature-place {
+    border-bottom: 1px solid #000;
+    width: 130px;
+    height: 40px;
+    margin: auto;
+}
+
+.wu-position-signator {
+    margin-bottom: 4px;
+}
+
+.wu-org-signator{
+	
+}
+.wu-qr-box {
+    position: absolute;
+    bottom: 70px;
+    right: 40px;
+}
+
+.wu-qr-number {
+    font-family: "TT Wellingtons Light";
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.wu-qr {
+    width: 1.4in;
+    height: 1.4in;
+    background-color: azure;
+}
+
+.wu-img-qr {
+    width: 1.4in;
+    height: 1.4in;
+}
+
+
