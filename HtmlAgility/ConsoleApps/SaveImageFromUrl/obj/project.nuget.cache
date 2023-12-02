@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uwxgr4Sr/MMbDAuNSbkgcL0EqRIC8+sHOZe9wUU9BNIyhqsdEabElHhLVxBzCi+WPcPkmwjziaSZEmeN1vW3Uw==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\htmlagilitypack\\1.11.54\\htmlagilitypack.1.11.54.nupkg.sha512"
+  ],
+  "logs": []
+}
