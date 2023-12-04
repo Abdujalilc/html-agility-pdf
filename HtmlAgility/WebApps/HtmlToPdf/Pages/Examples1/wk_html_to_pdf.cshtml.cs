@@ -34,7 +34,7 @@ namespace HtmlToPdfWeb.Pages.Examples1
         }
         private void GeneratePDF(string assemblyPath, string htmlPath, string pdfPath)
         {
-            string options = "--enable-local-file-access --enable-forms --page-size A4 --orientation Landscape";
+            string options = "--page-size A4 --orientation Landscape";
             ProcessStartInfo info = new ProcessStartInfo();
             info.CreateNoWindow = true;
             info.WindowStyle = ProcessWindowStyle.Hidden;

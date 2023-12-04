@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Examples1\SelectPdfTest.cshtml.cs" />
     <Compile Remove="Pages\Examples1\SpirePdf.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Examples1\SelectPdfTest.cshtml" />
     <Content Remove="Pages\Examples1\SpirePdf.cshtml" />
   </ItemGroup>
 
@@ -21,9 +23,11 @@
   <ItemGroup>
     <Folder Include="wwwroot\templates\pdfs\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="DinkToPdf" Version="1.0.8" />
+    <PackageReference Include="PuppeteerSharp" Version="13.0.1" />
+    <PackageReference Include="Select.HtmlToPdf" Version="22.2.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
 
 </Project>

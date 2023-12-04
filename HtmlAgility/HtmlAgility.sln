@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{E651EB9B-23F7-47A6-9269-26370A54CD19}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpTest", "ConsoleApps\PdfSharpTest\PdfSharpTest.csproj", "{55211629-8D95-4A68-A50C-FD6A7F8EF549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{8759F36B-F06C-4114-B130-FA89A02AA90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8759F36B-F06C-4114-B130-FA89A02AA90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8759F36B-F06C-4114-B130-FA89A02AA90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55211629-8D95-4A68-A50C-FD6A7F8EF549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55211629-8D95-4A68-A50C-FD6A7F8EF549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55211629-8D95-4A68-A50C-FD6A7F8EF549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55211629-8D95-4A68-A50C-FD6A7F8EF549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8E03C195-5A54-4C8E-B36A-51B3DA82790B} = {348A2F7F-E747-495A-91F1-E02B373AA16E}
 		{8759F36B-F06C-4114-B130-FA89A02AA90C} = {E651EB9B-23F7-47A6-9269-26370A54CD19}
+		{55211629-8D95-4A68-A50C-FD6A7F8EF549} = {348A2F7F-E747-495A-91F1-E02B373AA16E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB065D9E-FD13-4DDC-9072-B74C2594B67A}
