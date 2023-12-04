@@ -29,10 +29,13 @@ namespace HtmlToPdfWeb.Pages.Examples1
                 using (var browser = await Puppeteer.LaunchAsync(launchOptions))
                 using (var page = await browser.NewPageAsync())
                 {
-                    string url = "http://localhost:5058/templates/01/index.html";
+                    var req = HttpContext.Request;
+                    var baseUrl = $"{req.Scheme}://{req.Host}{req.PathBase}";
+                    string htmlPath = baseUrl + "/templates/01/index.html";
+
                     string pdfPath = Path.Combine(_env.WebRootPath, $"templates/pdfs/index.pdf");
 
-                    await page.GoToAsync(url);
+                    await page.GoToAsync(htmlPath);
 
                     await page.WaitForSelectorAsync("link[href='styles.css']");
                     await page.WaitForSelectorAsync(".wu-img-qr");                   
