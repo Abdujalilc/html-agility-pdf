@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj": {}
+    "C:\\Projects\\asp.net\\to-github\\html-agility-pdf\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj": {
+    "C:\\Projects\\asp.net\\to-github\\html-agility-pdf\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj",
+        "projectUniqueName": "C:\\Projects\\asp.net\\to-github\\html-agility-pdf\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj",
         "projectName": "SaveImageFromUrl",
-        "projectPath": "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj",
+        "projectPath": "C:\\Projects\\asp.net\\to-github\\html-agility-pdf\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\SaveImageFromUrl.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\asp.net\\to-github\\html-agility\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\obj\\",
+        "outputPath": "C:\\Projects\\asp.net\\to-github\\html-agility-pdf\\HtmlAgility\\ConsoleApps\\SaveImageFromUrl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
