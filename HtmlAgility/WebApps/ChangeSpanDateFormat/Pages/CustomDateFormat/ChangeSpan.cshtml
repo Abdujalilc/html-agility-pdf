@@ -1,6 +1,35 @@
 ﻿@page
+@using HtmlAgilityPack
+@using ChangeSpanDateFormat.Extensions
 
-@{
+@functions{
+    void WriteFormattedDate()
+    {
+        // Example usage:
+        HtmlDocument htmlDoc = new HtmlDocument();
+        htmlDoc.LoadHtml(@"<html>
+                        <body>
+                            <span id='exampleId'>dd MMM yyyy</span>
+                        </body>
+                      </html>");
+
+        string elementId = "exampleId";
+        DateTime newValue = DateTime.Now; // Example new value
+
+        ChangeDateSpan(htmlDoc, elementId, newValue);
+
+        Console.WriteLine(htmlDoc.DocumentNode.OuterHtml);
+    }
+    void ChangeDateSpan(HtmlDocument htmlDoc, string elementId, DateTime newValue)
+    {
+        HtmlNode spanElement = htmlDoc.DocumentNode.SelectSingleNode("//span[@id='" + elementId + "']");
+
+        if (spanElement != null)
+        {
+            string dateFromSpan = spanElement.InnerHtml;
+            spanElement.InnerHtml = newValue.ToCustomDateString(dateFromSpan);
+        }
+    }
 }
 
 <span>
