@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharpTest", "ConsoleApps
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelecthtmlToPdf", "ConsoleApps\SelecthtmlToPdf\SelecthtmlToPdf.csproj", "{DBAE2E9C-EE47-41C7-8A98-DCAA11AEEB39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfMerge", "WebApps\PdfMerge\PdfMerge.csproj", "{69452207-FF38-47C7-8519-68729687B087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfMerge", "WebApps\PdfMerge\PdfMerge.csproj", "{69452207-FF38-47C7-8519-68729687B087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeSpanDateFormat", "WebApps\ChangeSpanDateFormat\ChangeSpanDateFormat.csproj", "{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{69452207-FF38-47C7-8519-68729687B087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69452207-FF38-47C7-8519-68729687B087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69452207-FF38-47C7-8519-68729687B087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{55211629-8D95-4A68-A50C-FD6A7F8EF549} = {348A2F7F-E747-495A-91F1-E02B373AA16E}
 		{DBAE2E9C-EE47-41C7-8A98-DCAA11AEEB39} = {348A2F7F-E747-495A-91F1-E02B373AA16E}
 		{69452207-FF38-47C7-8519-68729687B087} = {E651EB9B-23F7-47A6-9269-26370A54CD19}
+		{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09} = {E651EB9B-23F7-47A6-9269-26370A54CD19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB065D9E-FD13-4DDC-9072-B74C2594B67A}
