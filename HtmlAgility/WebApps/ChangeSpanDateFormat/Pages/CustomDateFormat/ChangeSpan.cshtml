@@ -3,35 +3,34 @@
 @using ChangeSpanDateFormat.Extensions
 
 @functions{
-    void WriteFormattedDate()
+    string WriteFormattedDate()
     {
-        // Example usage:
         HtmlDocument htmlDoc = new HtmlDocument();
         htmlDoc.LoadHtml(@"<html>
-                        <body>
-                            <span id='exampleId'>dd MMM yyyy</span>
-                        </body>
-                      </html>");
+                <body>
+                    <span id='exampleId'>dd MMM yyyy</span>
+                </body>
+              </html>");
 
         string elementId = "exampleId";
-        DateTime newValue = DateTime.Now; // Example new value
+        DateTime newValue = DateTime.Now;
 
-        ChangeDateSpan(htmlDoc, elementId, newValue);
-
-        Console.WriteLine(htmlDoc.DocumentNode.OuterHtml);
+        return ChangeDateSpan(htmlDoc, elementId, newValue);
     }
-    void ChangeDateSpan(HtmlDocument htmlDoc, string elementId, DateTime newValue)
+    string ChangeDateSpan(HtmlDocument htmlDoc, string elementId, DateTime newValue)
     {
+        string result = "";
         HtmlNode spanElement = htmlDoc.DocumentNode.SelectSingleNode("//span[@id='" + elementId + "']");
 
         if (spanElement != null)
         {
             string dateFromSpan = spanElement.InnerHtml;
-            spanElement.InnerHtml = newValue.ToCustomDateString(dateFromSpan);
+            result = newValue.ToCustomDateString(dateFromSpan);
         }
+        return result;
     }
 }
 
 <span>
-    Hello from ChangeSpan
+    @WriteFormattedDate();
 </span>

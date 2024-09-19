@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelecthtmlToPdf", "ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfMerge", "WebApps\PdfMerge\PdfMerge.csproj", "{69452207-FF38-47C7-8519-68729687B087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeSpanDateFormat", "WebApps\ChangeSpanDateFormat\ChangeSpanDateFormat.csproj", "{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeSpanDateFormat", "WebApps\ChangeSpanDateFormat\ChangeSpanDateFormat.csproj", "{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
