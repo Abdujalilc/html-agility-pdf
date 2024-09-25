@@ -8,14 +8,16 @@
 <script src="~/editors/quill.js"></script>
 <script src="~/editors/quill-image-resize-module.js"></script>
 <style>
-    /* A4 size settings */
     .editor-container {
         width: 210mm;
         height: 297mm;
-        border: 1px solid #ccc; /* Optional: to visualize the A4 border */
-        margin: 0 auto; /* Center the editor */
-        /* //padding: 10px; Optional: padding inside the editor */
-        overflow: auto; /* Enable scrolling */
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    body, .ql-editor {
+        font-family: Arial, sans-serif;
     }
 </style>
 <form id="quillForm" method="post">
@@ -29,51 +31,18 @@
 </form>
 
 <script>
-    let quill; // Declare quill in a broader scope
-
+    let quill;
     window.onload = function () {
-        // Check if Quill is defined
-        if (typeof Quill !== 'undefined') {
-            console.log("Quill is defined");
-
-            // Check if the image resize module is defined
-            if (typeof Quill.import('modules/imageResize') !== 'undefined') {
-                console.log("Image Resize Module is defined");
-
-                // Register the image resize module
-                Quill.register('modules/imageResize', Quill.import('modules/imageResize'));
-
-                const toolbarOptions = [
-                    ['bold', 'italic', 'underline', 'strike'], ['image'],
-                    [{ 'font': ['arial', 'serif', 'monospace', 'sans-serif'] }],  // Font options
-                    [{ 'header': 1 }, { 'header': 2 }],
-                    [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-                    [{ 'align': [] }],
-                    ['clean']  // Clear formatting
-                ];
-
-                // Initialize the Quill editor
-                quill = new Quill('#editor', {
-                    theme: 'snow',
-                    modules: {
-                        toolbar: toolbarOptions,
-                        imageResize: {
-                            modules: ['Resize', 'DisplaySize']
-                        }
-                    }
-                });
-
-                // Set up form submission
-                document.getElementById('quillForm').onsubmit = function (event) {
-                    document.getElementById('editorContent').value = quill.root.innerHTML;
-                };
-            } else {
-                console.error('Image resize module is not defined.');
+        Quill.register('modules/imageResize', Quill.import('modules/imageResize'));
+        quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: [['bold', 'italic', 'underline'], ['image'], [{ 'font': ['arial'] }]],
+                imageResize: { modules: ['Resize'] }
             }
-        } else {
-            console.error('Quill is not defined.');
-        }
-    };   
+        });
+        document.getElementById('quillForm').onsubmit = function () {
+            document.getElementById('editorContent').value = quill.root.innerHTML;
+        };
+    };
 </script>
-
-
