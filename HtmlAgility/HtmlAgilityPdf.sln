@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfMerge", "WebApps\PdfMerg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeSpanDateFormat", "WebApps\ChangeSpanDateFormat\ChangeSpanDateFormat.csproj", "{3EDBE12E-C1D8-440B-96F0-01A5CF0D0C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CKEditor", "WebApps\CKEditor\CKEditor.csproj", "{C5DDBEBA-15CA-4F4D-A86C-471785561B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuillEditor", "WebApps\CKEditor\QuillEditor.csproj", "{C5DDBEBA-15CA-4F4D-A86C-471785561B4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
