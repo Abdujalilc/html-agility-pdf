@@ -1,0 +1,71 @@
+﻿@page
+@model QuillEditor.Pages.CKEditorTest.BasicQuillModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+<link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
+<link href="~/editors/quill.snow.css" rel="stylesheet" />
+<script src="~/editors/quill.js"></script>
+<script src="~/editors/quill-image-resize-module.js"></script>
+<style>
+    .editor-container {
+        width: 210mm;
+        height: 297mm;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .ql-editor {
+        font-family: 'Arial', 'Times New Roman';
+    }
+</style>
+<form id="quillForm" method="post">
+    <button type="submit">Submit</button>
+    <div class="editor-container">
+        <div id="editor">
+            @Html.Raw(Model.htmlTemplate)
+        </div>
+    </div>
+    <input type="hidden" name="editorContent" id="editorContent" />
+</form>
+
+<script>
+    let quill;
+    window.onload = function () {
+        Quill.register('modules/imageResize', Quill.import('modules/imageResize'));
+        
+        const toolbarOptions = [
+            ['bold', 'italic', 'underline', 'strike'],  // Text formatting
+            [{ 'list': 'ordered' }, { 'list': 'bullet' }],  // Lists
+            [{ 'header': [1, 2, false] }],  // Header sizes
+            [{ 'font': ['arial','times-new-roman'] }], ,  // Font options
+            [{ 'size': ['small', false, 'large', 'huge'] }],  // Font sizes
+            [{ 'color': [] }, { 'background': [] }],  // Text color and background color
+            [{ 'align': [] }],  // Text alignment
+            ['clean'],  // Clear formatting
+            ['image'],  // Image upload
+            ['link'],  // Link creation
+            ['blockquote'],  // Block quotes
+            ['code-block'],  // Code block
+            [{ 'direction': 'rtl' }],  // Text direction
+        ];
+        quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: {
+                toolbar: toolbarOptions,
+                imageResize: { modules: ['Resize'] }
+            }
+        });
+        document.getElementById('quillForm').onsubmit = function () {
+            document.getElementById('editorContent').value = quill.root.innerHTML;
+        };
+    };
+    const style = document.createElement('style');
+    style.innerHTML = `
+            .ql-font-arial { font-family: 'Arial', sans-serif; }
+            .ql-font-times-new-roman { font-family: 'Times New Roman', serif; }
+        `;
+    document.head.appendChild(style);
+</script>
