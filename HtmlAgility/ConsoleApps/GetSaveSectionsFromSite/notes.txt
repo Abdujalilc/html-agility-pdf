@@ -1,0 +1,22 @@
+create simple dotnet console project
+
+read from site and get <ol><li>
+
+there are anchors in li
+
+<li><a href="http://csharp-video-tutorials.blogspot.co.uk/2012/08/creating-altering-and-dropping-database.html">Working with databases</a></li>
+
+....
+
+request that url
+
+
+get document.querySelector("#post-body-lalala")
+id="post-body-2706564822424550595"
+last numbers are dynamic
+
+so get by this pattern id="post-body-
+
+save to a file as html
+
+for file name order number + get last part of url
